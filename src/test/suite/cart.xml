@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Inventory">
+
+    <test name="01 - removeItemFromCartTest">
+        <classes>
+            <class name="CartPageTest">
+                <methods>
+                    <include name="removeItemFromCartTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="02 - continueShoppingTest">
+        <classes>
+            <class name="CartPageTest">
+                <methods>
+                    <include name="continueShoppingTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="03 - checkoutTest">
+        <classes>
+            <class name="CartPageTest">
+                <methods>
+                    <include name="checkoutTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

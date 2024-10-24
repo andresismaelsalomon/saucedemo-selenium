@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Inventory">
+
+    <test name="01 - continueCheckoutTest">
+        <classes>
+            <class name="CheckoutTwoPageTest">
+                <methods>
+                    <include name="continueCheckoutTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="02 - cancelCheckoutTest">
+        <classes>
+            <class name="CheckoutTwoPageTest">
+                <methods>
+                    <include name="cancelCheckoutTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Inventory">
+
+    <test name="01 - Add random items to cart Test">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="addRandomItemTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="02 - Add specific item to cart">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="addSpecificItemTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="03 - Remove specific item to cart">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="removeSpecificItemTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="04 - sortByAZ">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="sortByAZTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="05 - sortByZA">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="sortByZATest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="06 - sortByLowPrice">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="sortByLowPriceTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="07 - sortByHighPrice">
+        <classes>
+            <class name="InventoryPageTest">
+                <methods>
+                    <include name="sortByHighPriceTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+</suite>

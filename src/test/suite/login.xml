@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login">
+
+    <test name="01 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="02 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInWithWrongUsernameTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="03 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInWithWrongPasswordTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="04 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInWithNoUsernameTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="05 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInWithNoPasswordTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="06 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInWithWrongUsernameAndPasswordTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="07 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInWithNoUsernameOrPasswordTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="08 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInLockedOutUserTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="09 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInProblemUserTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="10 - LogIn Test">
+        <classes>
+            <class name="LoginPageTest">
+                <methods>
+                    <include name="logInPerformanceGlitchUserTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

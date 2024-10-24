@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Inventory">
+
+    <test name="01 - continueCheckoutTest">
+        <classes>
+            <class name="CheckoutOnePageTest">
+                <methods>
+                    <include name="continueCheckoutTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="02 - cancelCheckoutTest">
+        <classes>
+            <class name="CheckoutOnePageTest">
+                <methods>
+                    <include name="cancelCheckoutTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="03 - errorFirstNameTest">
+        <classes>
+            <class name="CheckoutOnePageTest">
+                <methods>
+                    <include name="errorFirstNameTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="04 - errorLastNameTest">
+        <classes>
+            <class name="CheckoutOnePageTest">
+                <methods>
+                    <include name="errorLastNameTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="05 - errorZipCodeTest">
+        <classes>
+            <class name="CheckoutOnePageTest">
+                <methods>
+                    <include name="errorZipCodeTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
